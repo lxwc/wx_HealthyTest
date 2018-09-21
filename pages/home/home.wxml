@@ -1,0 +1,33 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view>
+    <swiper indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+      <block wx:for="{{imgUrls}}" wx:key="item.id" wx:for-item="item">
+        <swiper-item>
+          <image class="slider-img" src="{{item}}" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="board">
+    <navigator url="../list/list">
+      <view class="board-item">
+        <text>生活贴士</text>
+        <image src="../../images/arrowright.png" mode='aspectFill'></image>
+      </view>
+    </navigator>
+    <navigator url="../list/list">
+      <view class="board-item">
+        <text>健康知识</text>
+        <image src="../../images/arrowright.png" mode='aspectFill'></image>
+      </view>
+    </navigator>
+    <navigator url="../list/list">
+      <view class="board-item">
+        <text>健康菜谱</text>
+        <image src="../../images/arrowright.png" mode='aspectFill'></image>
+      </view>
+    </navigator>
+  </view>
+</view>

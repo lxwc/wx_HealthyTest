@@ -1,0 +1,27 @@
+/* pages/list/list.wxss */
+.list{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.item{
+  border: 1rpx solid #ddd;
+}
+
+.item image{
+  padding: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.title{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  font-size:30rpx;
+  position: absolute;
+  margin-top:-96rpx;
+  margin-left:117rpx;
+
+}

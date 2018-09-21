@@ -1,0 +1,39 @@
+/* pages/home/home.wxss */
+
+.slider-img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.board{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+  padding: 40rpx;
+}
+
+navigator{
+  margin-bottom: 30rpx;
+}
+
+.board-item{
+  border: 1rpx solid #ddd;
+  height: 100rpx;
+  border-radius: 15rpx;
+}
+.board-item text{
+  line-height: 100rpx;
+  padding-left: 50rpx;
+}
+
+.board-item image{
+  flex: 1;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top:33rpx;
+  margin-right:16px;
+  float:right;
+
+
+}

@@ -1,0 +1,9 @@
+<!--pages/list/list.wxml-->
+<scroll-view class="list" scroll-y="true" bindscrolltolower="handleLoadMore">
+  <view class="item" wx:for="{{list}}" wx:for-item="item" bindtap="bindTopView" data-title="item.title" id="item.id" bindtap="tapName" wx:key="item.id">
+    <image src="../../images/{{item.url}}"></image>
+    <view class="title">
+      {{item.title}}
+    </view>
+  </view>
+</scroll-view>
