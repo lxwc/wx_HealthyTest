@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/list/list",
     "pages/home/home",
     "pages/search/search",
-    "pages/about/about",
-    "pages/detail/detail"
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,9 +13,10 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#333",
-    "selectedColor": "#ccc",
+    "color": "#dddddd",
+    "selectedColor": "black",
     "borderStyle": "",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "text": "HOME",

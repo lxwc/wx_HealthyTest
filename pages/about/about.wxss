@@ -1,1 +1,9 @@
 /* pages/about/about.wxss */
+view{
+  text-align: center;
+  
+}
+
+view:first-child{
+  margin-top: 250rpx;
+}

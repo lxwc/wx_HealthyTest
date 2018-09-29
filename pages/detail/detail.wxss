@@ -1,1 +1,28 @@
 /* pages/detail/detail.wxss */
+
+.dt-title{
+  font-size: 45rpx;
+  font-weight: 20rpx;
+  text-align: center;
+  margin: 10rpx;
+}
+
+.dt-img{
+  margin: 10rpx;
+  text-align: center;
+}
+
+.dt-img image{
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.dt-dec{
+  margin: 20rpx;
+  text-indent: 60rpx;
+}
+
+.dt-dec span{
+  font-size: 30rpx;
+  line-height: 40rpx;
+}

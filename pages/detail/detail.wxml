@@ -1,2 +1,10 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view>
+  <view class="dt-title">{{item.title}}</view>
+  <view class="dt-img">
+    <image src="../../images/{{item.url}}"></image>
+  </view>
+  <view class="dt-dec">
+    <p>{{item.dec}}</p>
+  </view>
+</view>

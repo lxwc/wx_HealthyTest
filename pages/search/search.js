@@ -5,14 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputKey: "",
+    chooseKey: "",
+    items: [
+      { name: 'cook', value: '菜谱' },
+      { name: 'disease', value: '病症' },
+      { name: 'drug', value: '药品' },
+    ]
   },
-
+  bindKeyInput: function(e){
+    this.inputKey = e.detail.value;
+  },
+  radioChange: function(e){
+    console.log(e);
+    this.chooseKey = e.detail.value;
+  },
+  tagName: function(event){
+    wx.navigateTo({
+      url: '../list/list?id=' + this.inputKey,
+      id: this.inputKey
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

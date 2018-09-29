@@ -1,2 +1,7 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>猜</view>
+<view>猜</view>
+<view>我</view>
+<view>是</view>
+<view>谁</view>
+<view>？</view>

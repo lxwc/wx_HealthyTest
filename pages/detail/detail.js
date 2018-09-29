@@ -5,21 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    item: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.request({
+      url: "http://192.168.1.129:3001/detail",
+      data: {
+        id: options.id
+      },
+      type: "GET",
+      success: function (res) {
+        res.data.title = res.data.title + "----" + options.id;
+        that.setData({
+          item: res.data
+        });
+      }
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

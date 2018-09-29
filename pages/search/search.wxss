@@ -1,1 +1,24 @@
 /* pages/search/search.wxss */
+
+.sc-input{
+  margin:200rpx  50rpx 50rpx;
+}
+.sc-input input{
+  border-bottom: 1px solid #ddd;
+}
+
+.sc-radio{
+  text-align: center;
+}
+
+.sc-radio label:not(:first-child){
+  margin-left: 50rpx;
+}
+
+.sc-btn{
+  margin: 100rpx 50rpx;
+}
+.sc-btn button{
+  color: white;
+  background-color: green;
+}

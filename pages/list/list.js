@@ -8,7 +8,6 @@ Page({
       list:[]
   },
   tapName:function(event){
-      console.log(event);
       wx.navigateTo({
         url: '../detail/detail?id=' + event.currentTarget.id,
         id: event.currentTarget.id
@@ -19,20 +18,24 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    console.log("==",options);
+    var getListUrl = 'http://192.168.1.129:3001/list';
+    if(options.id != undefined){
+      getListUrl = 'http://192.168.1.129:3001/search';
+    }
     wx.request({
-      url: 'http://localhost:3001/list',
-        data: {},
-        header: {
-          'Content-Type': 'application/json'
-        },
-        success: function(res){
-          console.log(res);
-         // list = res.data.list
-          that.setData({
-            list: res.data.msg
-          });
-        }
-      })
+      url: getListUrl,
+      data: {
+        searchValue: options.id
+      },
+      type: "GET",
+      success: function(res){
+        // list = res.data.list
+        that.setData({
+          list: res.data
+        });
+      }
+    })
   },
 
   /**
